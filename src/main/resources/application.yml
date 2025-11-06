@@ -12,7 +12,7 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        format_sql: true
+        formatSql: true
   h2:
     console:
       enabled: true
@@ -20,3 +20,24 @@ spring:
 
 server:
   port: 9000
+
+springdoc:
+  swagger-ui.path: /openapi/swagger-ui.html 
+  api-docs.path: /openapi/v3/api-docs
+  packagesToScan: dev.sdras.caixasugestoes.resources
+  pathsToMatch: /**
+
+api:
+  common:
+    version: 1.0.0
+    title: API de Caixa de Sugestões - Fatec Araras
+    description: API para gerenciamento de sugestões desenvolvidas pelos alunos da Fatec Araras
+    termsOfService: Em desenvolvimento
+    license: Em desenvolvimento
+    licenseUrl: Em desenvolvimento
+    externalDocDesc: Em desenvolvimento
+    externalDocUrl: Em desenvolvimento
+    contact:
+      name: Esdras B Silva
+      url: github.com/f290DSM
+      email: esdras.silva9@fatec.sp.gov.br
